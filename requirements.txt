@@ -1,0 +1,33 @@
+# Dependencias del Chatbot WhatsApp
+# Optimizado para tiempo de respuesta <1s
+
+# Framework web rápido
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+
+# Base de datos y caché
+redis==5.0.1
+sqlite3  # Incluido en Python
+
+# Procesamiento de lenguaje natural (modelos ligeros)
+spacy==3.7.2
+transformers==4.35.2
+torch==2.1.1
+tokenizers==0.15.0
+
+# Procesamiento de imágenes
+Pillow==10.1.0
+opencv-python-headless==4.8.1.78
+
+# Utilidades
+requests==2.31.0
+python-multipart==0.0.6
+pydantic==2.5.0
+python-dotenv==1.0.0
+
+# Logging y monitoreo
+structlog==23.2.0
+
+# Modelos de spaCy (descargar manualmente)
+# python -m spacy download es_core_news_sm
+# python -m spacy download en_core_web_sm
